@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: linear-gradient(160deg, #eef2ff, #f8fafc 60%);
+  color: #1e293b;
+  min-height: 100vh;
+  padding: 60px 20px;
+}
+
+main {
+  max-width: 520px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(30, 41, 59, 0.08);
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+header p {
+  color: #64748b;
+  margin-top: 6px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+input {
+  flex: 1;
+  padding: 14px 16px;
+  font-size: 18px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 12px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+}
+
+input.ok    { border-color: #10b981; }
+input.error { border-color: #ef4444; }
+
+button {
+  padding: 0 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: #6366f1;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover { background: #4f46e5; }
+
+.mensaje {
+  min-height: 24px;
+  margin-top: 14px;
+  font-size: 15px;
+}
+
+.mensaje.ok    { color: #059669; }
+.mensaje.error { color: #dc2626; }
+
+section {
+  margin-top: 36px;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 24px;
+}
+
+.titulo-historial {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#contador {
+  color: #94a3b8;
+  font-size: 14px;
+  flex: 1;
+}
+
+button.enlace {
+  background: none;
+  color: #94a3b8;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+button.enlace:hover { color: #ef4444; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 12px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 14px;
+}
+
+.punto {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.punto.ok    { background: #10b981; }
+.punto.error { background: #ef4444; }
+
+.valor {
+  font-weight: 600;
+  min-width: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.motivo {
+  color: #64748b;
+  flex: 1;
+}
+
+.fecha {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.vacio {
+  color: #94a3b8;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}

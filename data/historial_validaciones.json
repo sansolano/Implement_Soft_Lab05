@@ -1,0 +1,26 @@
+[
+  {
+    "fecha": "2026-10-14 20:14:00",
+    "valor": "1",
+    "resultado": "Aceptado",
+    "motivo": ""
+  },
+  {
+    "fecha": "2026-10-14 20:14:03",
+    "valor": "-1",
+    "resultado": "Rechazado",
+    "motivo": "La cantidad debe ser mayor o igual a 1."
+  },
+  {
+    "fecha": "2026-10-14 20:14:05",
+    "valor": "5.5",
+    "resultado": "Rechazado",
+    "motivo": "No se permiten números decimales."
+  },
+  {
+    "fecha": "2026-10-14 20:14:09",
+    "valor": "500",
+    "resultado": "Rechazado",
+    "motivo": "La cantidad no puede ser mayor a 100."
+  }
+]

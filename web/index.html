@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab_05</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Validación de campo</h1>
+      <p>Ingrese una cantidad entera entre <b>1</b> y <b>100</b>.</p>
+    </header>
+
+    <form id="formulario" autocomplete="off">
+      <input id="cantidad" type="text" placeholder="Ingrese un valor" autofocus>
+      <button type="submit">Validar</button>
+    </form>
+
+    <p id="mensaje" class="mensaje"></p>
+
+    <section>
+      <div class="titulo-historial">
+        <h2>Historial</h2>
+        <span id="contador"></span>
+        <button id="borrar" class="enlace">Borrar</button>
+      </div>
+      <ul id="historial"></ul>
+      <p id="vacio" class="vacio">Aún no hay validaciones.</p>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
